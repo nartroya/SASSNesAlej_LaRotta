@@ -1,0 +1,191 @@
+/******************** Media Queries Generales ********************/
+@media (min-width: 992.1px) and (max-width: 1023px) {
+    h1 {font-size: 1.5em;}
+    h2 {font-size: 1.17em;}
+    h3 {font-size: .83em;}
+    p {font-size: .83em;}
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "menu menu"
+        "linea linea"
+        "slider slider"
+        "cuerpo cuerpo"
+        "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        padding: 0;
+    }
+    .divimagenLogo {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .cajonimagenSocial {
+        margin-bottom: 0px;
+        display: none;
+    }
+    .menuNavegacionOpcion {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+    #vaciaTittleUno, #vaciaTittleDos, .vaciaUno, .vaciaDos, .vaciaFooterUno, .vaciaFooterDos {display: none;}
+}
+@media (min-width: 480.1px) and (max-width: 992px) {
+    h1 {font-size: 1.5em;}
+    h2 {font-size: 1.17em;}
+    h3 {font-size: .83em;}
+    p {font-size: .83em;}
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "menu menu"
+        "linea linea"
+        "slider slider"
+        "cuerpo cuerpo"
+        "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        padding: 0;
+    }
+    .divimagenLogo {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .cajonimagenSocial {
+        margin-bottom: 0px;
+        display: none;
+    }
+    .menuNavegacionOpcion {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+    #vaciaTittleUno, #vaciaTittleDos, .vaciaUno, .vaciaDos, .vaciaFooterUno, .vaciaFooterDos {display: none;}
+}
+@media (max-width: 480px) {
+    h1 {font-size: 1.5em;}
+    h2 {font-size: 1.17em;}
+    h3 {font-size: 0.83em;}
+    p {font-size: 0.83em;}
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "linea"
+        "slider"
+        "cuerpo"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+    }
+    #vaciaTittleUno, #vaciaTittleDos, .vaciaUno, .vaciaDos, .vaciaFooterUno, .vaciaFooterDos {display: none;}
+    .cajonimagenSocial {margin-bottom: 0px;display: none;}
+    .footer {display: flex; flex-direction: column;}
+    .menuNavegacionOpcion {/*margin-top: 5px; margin-bottom: 5px;*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+    }
+    .divFooter {margin: auto; padding: 5px;}
+    li {list-style: none; margin-bottom: 20px; text-align: center;}
+    .divimagenLogo {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .cajonimagenSocial {margin-bottom: 0px;display: none;}
+}
+/****************************************/
+/******************** Media Queries Index ********************/
+@media (min-width: 481px) and (max-width: 1023px) {
+    .sliderPrincipal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .cajonSliderPrincipal h1 {
+        margin-bottom: 20px;
+    }
+    .cajonSliderSecundarioUno {
+        width: 33.33%;
+    }
+    .imagenSliderSecundario {
+        width: 40%;
+    }
+}
+@media (max-width: 480px) {
+    .sliderPrincipal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cajonSliderPrincipal {width: 100%; margin: auto;}
+    .sliderSecundario {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cajonSliderSecundario {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 5px;
+    }
+    .cajonSliderSecundario h4 {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .seccionUno {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cajonSeccionUno {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .imagenDiagrama {width: 100%; margin: auto;}
+    .imagenSliderSecundario:hover {transform:scale(1);}
+}
+
+/****************************************/
